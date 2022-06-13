@@ -1,0 +1,36 @@
+body{
+    background-color: #222;
+}
+
+header{
+    background-color: #488106;
+    color: #fff;
+}
+
+.ms_container{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.ms_password{
+    width: 200px;
+}
+
+.ms_data{
+    font-size: 20px;
+}
+
+.ms_passwordgenerated{
+    padding: 5px 10px;
+    background-color: #488106;
+    color: #fff;
+    border-radius: 10px;
+}
+
+footer{
+    color: #fff;
+    font-size: 15px;
+}
+

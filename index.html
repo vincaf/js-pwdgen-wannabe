@@ -10,36 +10,49 @@
     <title>Psw Generator</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="title">(Insicurissimo) Password Generator</h1>
-            <p class="subtitle">Inserisci i tuoi dati e verrà generata una password personalizzata per te!</p>
+    <div class="ms_container">
+        <header class="mt-5 text-center">
+                <h1 class="title pt-3"><em>(Insicurissimo)</em> Password Generator</h1>
+                <p class="subtitle fst-italic pb-3">Inserisci i tuoi dati e verrà generata una password personalizzata per te!</p>
+        </header>
+
+        <main class="p-5">
+            <div class="row row-cols-2 justify-content-center">
+                <div class="col-5 align-self-center ms_data">
+                    <div>
+                        Il tuo nome è: <span class="fw-bold" id="userName"></span>
+                    </div>
+
+                    <div>
+                        Il tuo cognome è: <span class="fw-bold" id="userLastName"></span>
+                    </div>
+
+                    <div>
+                        Il tuo colore preferito è: <span class="fw-bold" id="userFavoriteColour"></span>
+                    </div>
+
+                    <div>
+                        Anno: <span class="fw-bold" id="currentYear"></span>
+                    </div>
+
+                    <div>
+                        Password generata per te: 
+                        <div class="mt-2">
+                            <span class="fw-bold ms_passwordgenerated" id="password"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img class="ms_password" src="./img/Password-img.png" alt="passwordgenerated">
+                </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="col-12 mt-4 text-center">
+            <p><em>Copyright ©2022 Vincenzo Cafasso</em></p>
         </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <div>
-                Il tuo nome è: <span id="userName"></span>
-            </div>
-
-            <div>
-                Il tuo cognome è: <span id="userLastName"></span>
-            </div>
-
-            <div>
-                Il tuo colore preferito è: <span id="userFavoriteColour"></span>
-            </div>
-
-            <div>
-                Anno: <span id="currentYear"></span>
-            </div>
-
-            <div>
-                Password generata per te: <span id="password"></span>
-            </div>
-        </div>
-    </main>
+    </footer>
     
     <script src="script.js"></script>
 </body>
